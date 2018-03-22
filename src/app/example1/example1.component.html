@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-center">
+  <div class="d-flex flex-column">
+    <div class="pt-2 pb-4">
+      <button class="btn btn-outline-secondary btn-block btn-sm" (click)="start()">START</button>
+    </div>
+    <div class="pt-2" style="width: 600px;">
+      <ngx-completion-steps>
+        <ng-container *ngFor="let step of steps">
+          <ng-template
+            [name]="step.name"
+            [header]="step.header"
+            [description]="step.description"
+            [state]="step.state"
+            ngxCompletionStepTpl>tpl</ng-template>
+        </ng-container>
+      </ngx-completion-steps>
+    </div>
+  </div>
+</div>

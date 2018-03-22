@@ -1,0 +1,10 @@
+<ngx-completion-steps>
+  <ng-container *ngFor="let step of steps">
+    <ng-template
+      [name]="step.name"
+      [header]="step.header"
+      [description]="step.description"
+      [state]="step.state"
+      ngxCompletionStepTpl>tpl</ng-template>
+  </ng-container>
+</ngx-completion-steps>

@@ -2,7 +2,7 @@
   "extends": "../tsconfig.json",
   "angularCompilerOptions": {
     "paths": {
-      "@marklb/ngx-completion-steps": [ "../lib/app/public_api.ts" ]
+      "@marklb/ngx-completion-steps": [ "../dist/lib" ]
     }
   },
   "compilerOptions": {
@@ -11,7 +11,7 @@
     "module": "es2015",
     "types": [],
     "paths": {
-      "@marklb/ngx-completion-steps": [ "../lib/app/public_api.ts" ]
+      "@marklb/ngx-completion-steps": [ "../dist/lib" ]
     }
   },
   "exclude": [

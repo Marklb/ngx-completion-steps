@@ -1,0 +1,23 @@
+<div class="card pt-1 pl-1 pr-1">
+  <ng-container *ngFor="let stepTemplate of completionStepTemplates">
+    <div class="mb-1">
+      <!-- <pre>{{ stepTemplate | json }}</pre> -->
+      <!-- <pre>{{ stepTemplate.template | json }}</pre> -->
+      <ngx-completion-step
+        [name]="stepTemplate.name"
+        [header]="stepTemplate.header"
+        [description]="stepTemplate.description"
+        [state]="stepTemplate.state">
+        <!-- <ng-template [ngTemplateOutlet]="stepTemplate"></ng-template> -->
+      </ngx-completion-step>
+    </div>
+  </ng-container>
+  <div class="progress mb-1">
+    <div class="progress-bar progress-bar-striped progress-bar-animated"
+      role="progressbar"
+      [attr.aria-valuenow]="completedPercent"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      [style.width]="completedPercent + '%'"></div>
+  </div>
+</div>
