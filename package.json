@@ -8,6 +8,7 @@
     "build": "ng build",
     "build:app": "cpr dist/lib src/@marklb/lib && ng build --app dev && rimraf src/@marklb",
     "build:lib": "rimraf dist && ng-packagr -p lib/package.json",
+    "publish": "npm publish dist",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
