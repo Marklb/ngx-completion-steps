@@ -43,28 +43,28 @@ export class Example3Component implements OnInit {
       this.steps[0].state = 'inProgress'
       setTimeout(() => {
         this.steps[0].state = 'complete'
-      }, 300)
+      }, 3000)
     }, 30)
 
     setTimeout(() => {
       this.steps[1].state = 'inProgress'
       setTimeout(() => {
         this.steps[1].state = 'complete'
-      }, 400)
-    }, 50)
+      }, 7000)
+    }, 100)
 
     setTimeout(() => {
       this.steps[2].state = 'inProgress'
       setTimeout(() => {
         this.steps[2].state = 'error'
-      }, 500)
+      }, 4000)
     }, 70)
 
     setTimeout(() => {
       this.steps[3].state = 'inProgress'
       setTimeout(() => {
         this.steps[3].state = 'complete'
-      }, 600)
-    }, 90)
+      }, 6000)
+    }, 200)
   }
 }

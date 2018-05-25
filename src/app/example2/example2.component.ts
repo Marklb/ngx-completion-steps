@@ -7,8 +7,9 @@ import {
   ViewChild,
   ViewContainerRef,
 } from '@angular/core'
-import { NgxCompletionStepsComponent } from '../../../lib/app/public_api'
 import { Example3Component } from '../example3/example3.component'
+
+import { NgxCompletionStepsComponent } from '../../lib'
 
 @Component({
   selector: 'app-example2',

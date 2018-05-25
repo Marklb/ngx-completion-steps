@@ -1,6 +1,7 @@
 {
   "rulesDirectory": [
-    "node_modules/codelyzer"
+    "node_modules/codelyzer",
+    "node_modules/rxjs-tslint"
   ],
   "rules": {
     "arrow-return-shorthand": true,
@@ -18,7 +19,6 @@
     "forin": true,
     "import-blacklist": [
       true,
-      "rxjs",
       "rxjs/Rx"
     ],
     "import-spacing": true,
@@ -140,14 +140,17 @@
     "no-implicit-dependencies": false,
     "no-conditional-assignment": false,
     "prefer-conditional-expression": false,
+    "object-literal-shorthand": false,
     "rxjs-add": { "severity": "error" },
     "rxjs-no-unused-add": { "severity": "error" },
     "rxjs-deep-operators": true,
-    "rxjs-no-wholesale": true
+    "rxjs-collapse-imports": true,
+    "rxjs-pipeable-operators-only": true,
+    "rxjs-no-static-observable-methods": true,
+    "rxjs-proper-imports": true
   },
   "extends": [
     "tslint:latest",
-    "rxjs-tslint-rules",
     "tslint-angular",
     "tslint-config-prettier"
   ]

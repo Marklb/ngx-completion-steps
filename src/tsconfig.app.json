@@ -1,21 +1,12 @@
 {
   "extends": "../tsconfig.json",
-  "angularCompilerOptions": {
-    "paths": {
-      "@marklb/ngx-completion-steps": [ "../lib/app/public_api.ts" ]
-    }
-  },
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "baseUrl": "./",
     "module": "es2015",
-    "types": [],
-    "paths": {
-      "@marklb/ngx-completion-steps": [ "../lib/app/public_api.ts" ]
-    }
+    "types": []
   },
   "exclude": [
-    "test.ts",
+    "src/test.ts",
     "**/*.spec.ts"
   ]
 }
